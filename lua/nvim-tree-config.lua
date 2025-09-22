@@ -32,10 +32,9 @@ local function vsplit_preview()
 end
 
 -- nvim tree remaps
-vim.api.nvim_set_keymap("n", "<C-h>", ":NvimTreeToggle<cr>", {silent = true, noremap = true})
+vim.api.nvim_set_keymap("n", "<C-h>", ":NvimTreeToggle<cr>", { silent = true, noremap = true })
 
 -- on_attach
 vim.keymap.set("n", "l", edit_or_open)
 vim.keymap.set("n", "L", vsplit_preview)
-vim.keymap.set("n", "h", api.tree.close)
 vim.keymap.set("n", "H", api.tree.collapse_all)
