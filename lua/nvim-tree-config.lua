@@ -35,6 +35,6 @@ end
 vim.api.nvim_set_keymap("n", "<C-h>", ":NvimTreeToggle<cr>", { silent = true, noremap = true })
 
 -- on_attach
-vim.keymap.set("n", "l", edit_or_open)
-vim.keymap.set("n", "L", vsplit_preview)
-vim.keymap.set("n", "H", api.tree.collapse_all)
+--vim.keymap.set("n", "l", edit_or_open, { desc = "Open file to edit" })
+vim.keymap.set("n", "L", vsplit_preview, { desc = "Split preview" })
+vim.keymap.set("n", "H", api.tree.collapse_all ,{ desc = "Close/Open tree" })

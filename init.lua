@@ -5,4 +5,7 @@ require("remap")
 require("nvim-tree-config")
 require("conform-config")
 
+require("lualine-config")
+
+
 vim.cmd[[colorscheme tokyonight]]

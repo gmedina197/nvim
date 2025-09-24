@@ -19,10 +19,10 @@ local function format_code(args)
       ["end"] = { args.line2, end_line:len() },
     }
   end
-      require("conform").format({ async = true, lsp_format = "fallback", range = range })
+  require("conform").format({ async = true, lsp_format = "fallback", range = range })
 end
 
-vim.api.nvim_create_user_command("Format", format_code, { range = true })
+vim.api.nvim_create_user_command("Format", format_code, { range = true, desc = "Format code" })
 
 vim.keymap.set("n", "<leader>F", function()
   format_code()
